@@ -180,7 +180,7 @@ columns=fullflexible
 \title{
 %	\logo{
 \textbf{AI1110:} Probability and Random Variable\\
-Assignment-1
+Assignment-2
 %	}
 }
 \author{Mayank Parasramka$^{*}$\\AI22BTECH11018% <-this % stops a space
@@ -313,11 +313,11 @@ Tickets with no awards = 10,000 - 10 = 9990
 
 \item If one ticket is bought, \\
 '$S_1$'= Sample space = picking any one of the 10000 tickets. \\
-'A'= Event of not choosing one of the 10 prize tickets.
+'A'= Event of not choosing any one of the 10 prize tickets.
 \begin{align}
 n \brak{S_1} &=  ^{10000}C_1 = 10000 \\
 n \brak{A} &= ^{9990}C_1 = 9990 \\
-\pr{A} &= \frac{n \brak{S_1}}{n \brak{A}}= \frac{9990}{10000} \\
+\pr{A} &= \frac{n \brak{A}}{n \brak{S_1}}= \frac{9990}{10000} \\
 \therefore\pr{A} &= \frac{999}{1000}
 \end{align} 
 
@@ -327,8 +327,9 @@ n \brak{A} &= ^{9990}C_1 = 9990 \\
 \begin{align}
 n \brak{S_2} &=  ^{10000}C_2 \\
 n \brak{B} &= ^{9990}C_2  \\
-\pr{B} &= \frac{n \brak{S_2}}{n \brak{B}} \\ 
-\therefore\pr{B} &= \frac{^{10000}C_2}{^{9990}C_2} 
+\pr{B} &= \frac{n \brak{B}}{n \brak{S_2}} \\ 
+\pr{B} &= \frac{^{9990}C_2}{^{10000}C_2}=\frac{9990\times9989}{10000\times9999}\\ 
+\therefore\pr{B} &= \frac{1108779}{1111000}
 \end{align}  
 
 \item If 10 tickets are bought, \\
@@ -337,8 +338,8 @@ n \brak{B} &= ^{9990}C_2  \\
 \begin{align}
 n \brak{S_3} &=  ^{10000}C_{10} \\
 n \brak{C} &= ^{9990}C_{10}  \\
-\pr{C} &= \frac{n \brak{S_3}}{n \brak{C}} \\
-\therefore\pr{C} &= \frac{^{10000}C_{10}}{^{9990}C_{10}} 
+\pr{C} &= \frac{n \brak{C}}{n \brak{S_3}} \\
+\therefore\pr{C} &= \frac{^{9990}C_{10}}{^{10000}C_{10}} 
 \end{align}
 
 \end{enumerate}
