@@ -1,6 +1,7 @@
+
 \let\negmedspace\undefined
 \let\negthickspace\undefined
-\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
 %\documentclass[conference]{IEEEtran}
 %\IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
@@ -303,30 +304,41 @@ Assignment-3
 %%%Assignment Solution Starts Here%%% 
 \raggedright\textbf{Problem Statement:}\\ { Three letters are dictated to three persons and an envelope is addressed to each of them, the letters are inserted into the envelopes at random so that each envelope contains exactly one letter. Find the probability that at least one letter is in its proper envelope.}\\
 \solution\\
-Let $l_1$, $l_2$, $l_3$ denote the three letters, and $E_1$, $E_2$, $E_3$ denote the three corresponding envelopes respectively.\\
-Let $l_iE_i$ denote that $i^{th}$ letter is inserted into the corresponding $i^{th}$ envelope.\\
+Let $l_0$, $l_1$, $l_2$ denote the three letters, and $E_0$, $E_1$, $E_2$ denote the three corresponding envelopes respectively.\\
 'S'= Sample space = Randomly distributing the three letters in the three letters.\\
-'A'= Event that atleast one letter is in correct envelope 
+'A'= Event that atleast one letter is in correct envelope\\
+Let X and Y be random variables such that, 
 \begin{align}
-n\brak{S} &= 3!\\
-&= 6
+ & X =  \begin{cases}
+     0, \text{ if letter $l_0$ is inserted}\\
+     1, \text{ if letter $l_1$ is inserted}\\
+     2, \text{ if letter $l_2$ is inserted}
+ \end{cases}\\
+ & Y =  \begin{cases}
+     0, \text{ if envelope $E_0$ is used}\\
+     1, \text{ if envelope $E_1$ is used}\\
+     2, \text{ if envelope $E_2$ is used}
+ \end{cases}
 \end{align}
+Let $R_{xy}$ denote that letter X=x is inserted into envelope Y=y.
 The sample space is,
 \begin{enumerate}
-\item $l_1E_1, l_2E_3, l_3E_2$
-\item $l_2E_2, l_1E_3, l_3E_1$
-\item $l_3E_3, l_1E_2, l_2E_1$
-\item $l_1E_1, l_2E_2, l_3E_3$
-\item $l_1E_2, l_2E_3, l_3E_1$
-\item $l_1E_3, l_2E_1, l_3E_2$
+\item $R_{00}, R_{21}, R_{12}$
+\item $R_{11}, R_{20}, R_{02}$
+\item $R_{22}, R_{01}, R_{10}$
+\item $R_{00}, R_{11}, R_{22}$
+\item $R_{01}, R_{12}, R_{20}$
+\item $R_{02}, R_{10}, R_{21}$
 \end{enumerate}
-There are 4 ways in which at least one letter is correctly placed,
+There are 4 ways in which at least one letter is correctly placed, i.e. at least one $R_{ii}$ for i=\cbrak{0,1,2},\\
+Hence,
 \begin{align}
-\therefore n\brak{A} &= 4
+n\brak{S} &= 3! = 6\\
+n\brak{A} &= 4
 \end{align}
 Hence,
 \begin{align}
-\pr{A} &= \frac{n\brak{A}}{n\brak{S}}\\
+\pr{\text{at least once } X=Y=i} &= \frac{n\brak{A}}{n\brak{S}}\\
 &=\frac{4}{6}\\
 &=\frac{2}{3}
 \end{align}
