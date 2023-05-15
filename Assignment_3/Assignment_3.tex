@@ -307,30 +307,25 @@ Assignment-3
 Let $l_0$, $l_1$, $l_2$ denote the three letters, and $E_0$, $E_1$, $E_2$ denote the three corresponding envelopes respectively.\\
 'S'= Sample space = Randomly distributing the three letters in the three letters.\\
 'A'= Event that atleast one letter is in correct envelope\\
-Let X and Y be random variables such that, 
-\begin{align}
- & X =  \begin{cases}
-     0, \text{ if letter $l_0$ is inserted}\\
-     1, \text{ if letter $l_1$ is inserted}\\
-     2, \text{ if letter $l_2$ is inserted}
- \end{cases}\\
- & Y =  \begin{cases}
-     0, \text{ if envelope $E_0$ is used}\\
-     1, \text{ if envelope $E_1$ is used}\\
-     2, \text{ if envelope $E_2$ is used}
- \end{cases}
-\end{align}
-Let $R_{xy}$ denote that letter X=x is inserted into envelope Y=y.
+Let X and Y be random variables such that,\\
+ \begin{table}[h]
+ \renewcommand\thetable{1}
+  \centering
+  \input{table_1.tex}
+  \caption{where $l_kE_k$ denote letter $l_k$, and envelope $E_k$ for X and Y respectively}
+  \label{tab:Table 1}
+ \end{table}
+Let XY denote that letter X is inserted into envelope Y.
 The sample space is,
 \begin{enumerate}
-\item $R_{00}, R_{21}, R_{12}$
-\item $R_{11}, R_{20}, R_{02}$
-\item $R_{22}, R_{01}, R_{10}$
-\item $R_{00}, R_{11}, R_{22}$
-\item $R_{01}, R_{12}, R_{20}$
-\item $R_{02}, R_{10}, R_{21}$
+\item \brak{00, 21, 12}
+\item \brak{11, 20, 02}
+\item \brak{22, 01, 10}
+\item \brak{00, 11, 22}
+\item \brak{01, 12, 20}
+\item \brak{02, 10, 21}
 \end{enumerate}
-There are 4 ways in which at least one letter is correctly placed, i.e. at least one $R_{ii}$ for i=\cbrak{0,1,2},\\
+There are 4 ways in which at least one letter is correctly placed, i.e. at least one kk for k=\cbrak{0,1,2},\\
 Hence,
 \begin{align}
 n\brak{S} &= 3! = 6\\
@@ -338,7 +333,7 @@ n\brak{A} &= 4
 \end{align}
 Hence,
 \begin{align}
-\pr{\text{at least once } X=Y=i} &= \frac{n\brak{A}}{n\brak{S}}\\
+\pr{\text{at least once } X=Y=k} &= \frac{n\brak{A}}{n\brak{S}}\\
 &=\frac{4}{6}\\
 &=\frac{2}{3}
 \end{align}
