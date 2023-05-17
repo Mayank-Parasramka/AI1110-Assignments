@@ -1,7 +1,7 @@
 
 \let\negmedspace\undefined
 \let\negthickspace\undefined
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
 %\documentclass[conference]{IEEEtran}
 %\IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
@@ -325,16 +325,16 @@ The sample space is,
 \item \brak{01, 12, 20}
 \item \brak{02, 10, 21}
 \end{enumerate}
-There are 4 ways in which at least one letter is correctly placed, i.e. at least one kk for k=\cbrak{0,1,2},\\
-Hence,
+TThere are only 2 ways in none of the 3 letters are correctly placed\\
+Hence, the PMF
 \begin{align}
-n\brak{S} &= 3! = 6\\
-n\brak{A} &= 4
+\pr{X=x,Y=y\neq x} &=\frac{2}{6}\\
+&=\frac{1}{3}
 \end{align}
 Hence,
 \begin{align}
-\pr{\text{at least once } X=Y=k} &= \frac{n\brak{A}}{n\brak{S}}\\
-&=\frac{4}{6}\\
+\pr{\text{at least once } X=Y=k} &= 1 - \pr{X=x,Y=y\neq x}\\
+&=1 - \frac{1}{3}\\
 &=\frac{2}{3}
 \end{align}
 \end{document}
