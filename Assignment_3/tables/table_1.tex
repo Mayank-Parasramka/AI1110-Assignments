@@ -3,12 +3,20 @@
 %%  This is a LaTeX2e table fragment exported from Gnumeric.        %%
 %%                                                                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{center}
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|c|c|c|}
 \hline
-\textbf{R.V.}& \textbf{$l_0E_0$} & \textbf{$l_1E_1$} & \textbf{$l_2E_2$} \\ \hline
-$X$		   	&   0      & 1         &  2\\ \hline
-$Y$ 		&	0      & 1        &  2 \\ \hline
+Random Variable  & Value of the random variable    & Event                            \\
+\hline
+\multirow{3}{*}X  & 1                           &  letter $l_0$ is inserted              \\
+\cline{2-3}
+                 & 2                           &  letter $l_1$ is inserted             \\
+\cline{2-3}
+                 & 3                            &  letter $l_2$ is inserted            \\                 
+\hline
+\multirow{3}{*}Y  & 1                            &  letter $E_0$ is used \\
+\cline{2-3}
+                 & 2                           &  letter $E_1$ is used   \\
+\cline{2-3}
+                 & 3                            & letter $E_2$ is used   \\                 
+\hline
 \end{tabular}
-\end{center}
